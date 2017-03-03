@@ -28,7 +28,7 @@ class WolfiesController < ApplicationController
 
     respond_to do |format|
       if @wolfy.save
-        format.html { redirect_to @wolfy, notice: 'Wolfy was successfully created.' }
+        format.html { redirect_to @wolfy, notice: 'Wolfy was successfully added to our system.' }
         format.json { render :show, status: :created, location: @wolfy }
       else
         format.html { render :new }
