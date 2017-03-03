@@ -1,0 +1,2 @@
+class Wolfy < ApplicationRecord
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @wolfy.name %>
+</p>
+
+<p>
+  <strong>Wolfie level:</strong>
+  <%= @wolfy.wolfie_level %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @wolfy.dob %>
+</p>
+
+<%= link_to 'Edit', edit_wolfy_path(@wolfy) %> |
+<%= link_to 'Back', wolfies_path %>
