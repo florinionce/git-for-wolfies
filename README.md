@@ -6,7 +6,7 @@ application up and running.
 ## Hello from the presentation
 
 Things you may want to cover:
-
+salut
 * Ruby version
 
 * System dependencies
