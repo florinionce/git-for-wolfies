@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wolfies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Wolfie level</th>
+      <th>Dob</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wolfies.each do |wolfy| %>
+      <tr>
+        <td><%= wolfy.name %></td>
+        <td><%= wolfy.wolfie_level %></td>
+        <td><%= wolfy.dob %></td>
+        <td><%= link_to 'Show', wolfy %></td>
+        <td><%= link_to 'Edit', edit_wolfy_path(wolfy) %></td>
+        <td><%= link_to 'Destroy', wolfy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wolfy', new_wolfy_path %>
